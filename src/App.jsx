@@ -6,19 +6,25 @@ function App() {
 
   return (
     <>
-    <div className="card bg-base-100 w-96 shadow-sm">
-  <div className="card-body">
-    <h2 className="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-  </div>
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
-  </figure>
-  <button className='btn'>Liked</button>
-</div>
-   
+ 
+   <div data-theme="light" className="min-h-screen">
+        
+        {/* Remove the other empty or duplicated data-theme attributes */}
+
+        <div className="navbar bg-base-100 shadow-sm">
+            <div className="flex-1">
+                <a className="btn btn-ghost text-xl">daisyUI</a>
+            </div>
+            <div className="flex-none">
+                <button className="btn btn-square btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-5 w-5 stroke-current"> 
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path> 
+                    </svg>
+                </button>
+            </div>
+        </div>
+      
+    </div> //
      
     </>
   )
